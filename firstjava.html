@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+<body>
+
+<h2>What Can Java Script Do?<h2>
+
+<p id = text>Java Script can change HTML attributes.</p>
+
+<p id = "hide" style = "display:none">I Am Here!</p>
+
+<button onclick = "document.getElementById('myImage').src = 'pic_bulbon.gif'">
+SWITCH ON</button>
+<img id = "myImage" src = "pic_bulboff.gif" style = "width:200px">
+
+<button onclick = "document.getElementById('myImage').src = 'pic_bulboff.gif'">SWITCH OF</button>
+
+<button type = "button" onclick = 'myFun()'>Change Font</button>
+<script>
+function myFun()
+  {
+	document.getElementById('text').style.color = "green";
+  }
+</script>
+<button type = 'button' onclick = "document.getElementById('text').style.display = 'none'">Disappear</button>
+<button type = "button" onclick = "document.getElementById('hide').style.display = 'block'">HERE</button>
+</body>
+</html>
